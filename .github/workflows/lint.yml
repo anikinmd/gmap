@@ -23,6 +23,6 @@ jobs:
       
       - name: Run vet
         run: go vet ./...
-      
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+
+      - name: Run Revive linter
+        uses: docker://morphy/revive-action:v2
